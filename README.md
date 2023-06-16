@@ -2,7 +2,7 @@
 
 The sh-slider Elementor addon allows you to create and customize beautiful sliders for your WordPress website. Follow the instructions below to install and use the sh-slider addon:
 
-![Live](https://github.com/shahruk-maharuj/guess-shahruk-game/assets/46062763/e8ef8f70-85a1-4d74-87ff-0e49369e7d54)
+https://github.com/shahruk-maharuj/guess-shahruk-game/assets/46062763/e8ef8f70-85a1-4d74-87ff-0e49369e7d54
 
 ### Installation
 
