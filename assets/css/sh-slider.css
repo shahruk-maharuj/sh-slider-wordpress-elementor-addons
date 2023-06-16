@@ -1,0 +1,113 @@
+.slider {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .slider .w-80 {
+    width: 85%;
+    text-align: center;
+    position: relative;
+  }
+
+  .slider .w-80 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .slider .w-20 {
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    border-left: 2px solid #dd3333;
+    flex-direction: column;
+  }
+
+  .slider .w-20 .sh-tab {
+    margin-bottom: 5px;
+  }
+
+  .slider .w-20 .sh-tab a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slider .w-20 img {
+    width: 100%;
+    height: auto;
+    max-width: 64px;
+    max-height: 20px;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.3;
+  }
+
+  .slider .w-20 .sh-tab.active img {
+    opacity: 1;
+  }
+
+  .slider .w-20 .sh-tab:not(.active) img {
+    opacity: 0.3;
+  }
+
+  /* Responsive layout for mobile devices */
+  @media (max-width: 768px) {
+    .slider {
+      flex-direction: column;
+    }
+
+    .slider .w-80 {
+      order: 1;
+      width: 100%;
+    }
+
+    .slider .w-20 {
+      order: 2;
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      flex-direction: row;
+    }
+
+    .slider .w-20 .sh-tab {
+      margin-bottom: 0;
+      flex-wrap: nowrap;
+    }
+
+    .slider .w-20 .sh-tab a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 8px 10px;
+      box-sizing: border-box;
+      align-content: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+
+    .slider .w-20 .sh-tab:hover {
+      width: 20%;
+      border: none;
+    }
+
+    .slider .w-20 .sh-tab.active {
+      opacity: 1;
+      border-left: none;
+      padding-bottom: 8px;
+    }
+  }
